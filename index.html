@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Finance Advisor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Finance<span>Advisor</span></h1>
+            <p>CSE Portfolio Project</p>
+        </header>
+        
+        <section class="dashboard">
+            <div class="card">
+                <h3>Current Balance</h3>
+                <p id="balance">$0.00</p>
+            </div>
+            <div class="card">
+                <h3>Risk Status</h3>
+                <p id="status" class="safe">Stable</p>
+            </div>
+        </section>
+
+        <section class="actions">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Rent">Rent</option>
+                <option value="Tech">Tech</option>
+            </select>
+            <button onclick="updateFinance()">Add Transaction</button>
+        </section>
+    </div>
+</body>
+</html>
